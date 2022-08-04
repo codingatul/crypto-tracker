@@ -17,7 +17,7 @@ function Graph({ coinName }) {
         .get(url)
         .then((response) => {
           // console.log(response.data.prices);
-          setHistoricData(response.data.prices);
+          setHistoricData(response.data);
         })
         .catch((err) => {
           console.log(err.message);
